@@ -1,4 +1,5 @@
 # Mapular
+[![Build Status](https://travis-ci.org/Alliants/mapular.svg?branch=master)](https://travis-ci.org/Alliants/mapular)
 
 A simple factory for generating device specific map urls for responsive sites.
 
