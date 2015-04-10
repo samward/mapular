@@ -1,0 +1,28 @@
+{
+  "name": "mapular",
+  "homepage": "https://github.com/Alliants/mapular",
+  "main": "src/mapular.js",
+  "license": "MIT",
+  "ignore": [
+    "/*",
+    "!/src/*.js"
+  ],
+  "keywords": [
+    "angular",
+    "user-agent",
+    "browser",
+    "os",
+    "device",
+    "detection"
+  ],
+  "authors": [
+    "samward <s@m-ward.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Alliants/mapular.git"
+  },
+  "dependencies": {
+    "angularjs": "1.x.x"
+  }
+}

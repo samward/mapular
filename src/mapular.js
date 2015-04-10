@@ -2,15 +2,12 @@
 
 (function (angular) {
   angular.module('mapular', [])
-    .factory('Mapular', [
+    .service('Mapular', [
       function () {
-        var Mapular = function (userAgentString) {
-          this._userAgent = userAgentString || navigator.userAgent;
-        };
-
-        Mapular.prototype.url = function (args) {
+        this.url = function (args) {
+          var userAgentString = args.userAgentString || navigator.userAgent;
           var url;
-          var ua = parseUserAgent(this._userAgent);
+          var ua = parseUserAgent(userAgentString);
 
           if (agentSupportsGeoIntent(ua)) {
             url = 'geo:' + args.latitude + ',' + args.longitude;
@@ -65,8 +62,7 @@
 
         function getAndroidVersion(ua) {
           return ua.platform.version || getAndroidVersionFromString(ua.string);
-        }
-
-        return Mapular;
+        };
       }
-])})(angular);
+    ]);
+  })(angular);
