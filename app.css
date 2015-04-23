@@ -1,0 +1,82 @@
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+body {
+  background-color: #f1edd6;
+  text-align:  center;
+}
+
+.button, .url-preview {
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #1687dd;
+  color:  white;
+}
+
+img {
+  width:  50%;
+}
+
+h1 {
+  font-family: 'Poiret One', sans-serif;
+}
+
+.url-preview {
+  background-color: white;
+
+  margin-top:  30px;
+  font: 0.8em "Courier New", Courier, mono;
+}
+
+#wrapper {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 3em;
+}
+
+footer {
+  margin-top: 3em;
+  font-size: 0.8em;
+}
+footer a {
+  margin: 1em;
+  text-decoration: none;
+  color: black;
+}
+
+footer img {
+  width: 40px;
+  border-radius: 5px;
+  clear: both;
+  margin: 20px
+}
